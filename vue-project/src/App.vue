@@ -21,9 +21,8 @@ import HelloWorld from "./components/HelloWorld.vue";
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
+    <RouterView></RouterView>
   </header>
-
-  <RouterView />
 </template>
 
 <style scoped>
