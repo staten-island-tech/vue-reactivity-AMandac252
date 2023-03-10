@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
+import { RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
@@ -8,13 +8,13 @@ import HelloWorld from "./components/HelloWorld.vue";
     <img
       alt="Neko Atsume Logo"
       class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
+      src="@/assets/images/Neko_atsume_logo.png"
+      width="200"
+      height="200"
     />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="Neko Atsume Goodies Store" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
