@@ -17,8 +17,8 @@ import HelloWorld from "./components/HelloWorld.vue";
       <HelloWorld msg="Neko Atsume Goodies Store" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">Catalog</RouterLink>
+        <RouterLink to="/about">Cart</RouterLink>
       </nav>
     </div>
     <RouterView></RouterView>
