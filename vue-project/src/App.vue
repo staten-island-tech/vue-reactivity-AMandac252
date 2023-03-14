@@ -21,8 +21,8 @@ import HelloWorld from "./components/HelloWorld.vue";
         <RouterLink to="/about">Cart</RouterLink>
       </nav>
     </div>
-    <RouterView></RouterView>
   </header>
+  <RouterView></RouterView>
 </template>
 
 <style scoped>
@@ -33,7 +33,7 @@ header {
 
 .logo {
   display: block;
-  margin: 0 auto 2rem;
+  margin: 2rem auto 2rem;
 }
 
 nav {
@@ -66,6 +66,7 @@ nav a:first-of-type {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
+    margin: 5rem;
   }
 
   .logo {
