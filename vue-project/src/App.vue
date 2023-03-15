@@ -1,24 +1,24 @@
 <script setup>
 import { RouterView } from "vue-router";
-import HelloWorld from "./components/HelloWorld.vue";
+import SubHeader from "./components/SubHeader.vue";
 </script>
 
 <template>
   <header>
     <img
-      alt="Neko Atsume Logo"
+      alt="ChroNoir Logo"
       class="logo"
-      src="@/assets/images/Neko_atsume_logo.png"
+      src="@/assets/images/ChroNoir.png"
       width="200"
       height="200"
     />
 
     <div class="wrapper">
-      <HelloWorld msg="Neko Atsume Goodies Store" />
+      <SubHeader msg="ChroNoir Album Catalog" />
 
       <nav>
         <RouterLink to="/">Catalog</RouterLink>
-        <RouterLink to="/about">Cart</RouterLink>
+        <RouterLink to="/CartView">Cart</RouterLink>
       </nav>
     </div>
   </header>
