@@ -12,7 +12,7 @@ h1 {
 }
 
 @media (min-width: 550px) {
-  .cart {
+  .catalog {
     min-height: 80vh;
     display: flex;
     align-items: top;
@@ -21,7 +21,7 @@ h1 {
 }
 
 @media (min-width: 800px) {
-  .cart {
+  .catalog {
     min-height: 80vh;
     display: flex;
     align-items: top;
