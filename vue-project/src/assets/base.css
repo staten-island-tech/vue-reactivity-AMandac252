@@ -34,6 +34,19 @@
   --color-text: var(--vt-c-text-light-1);
 
   --section-gap: 160px;
+
+  --black: #000;
+  
+  --light-blue: #ABD3D8;
+  --mid-blue: #589DB3;
+  --dark-blue:#1596c1;
+  
+  --light-gray: #ACA7BB;
+  --mid-gray: #84848A;
+  --dark-red: rgba(123, 106, 147, 0.63);
+
+  --gray: #252c30;
+
 }
 
 @media (prefers-color-scheme: dark) {

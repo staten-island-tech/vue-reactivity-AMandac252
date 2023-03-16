@@ -14,7 +14,7 @@ import SubHeader from "./components/SubHeader.vue";
     />
 
     <div class="wrapper">
-      <SubHeader msg="ChroNoir Album Catalog" />
+      <SubHeader class="subheader" msg="ChroNoir Album Catalog" />
 
       <nav>
         <RouterLink to="/">Catalog</RouterLink>
@@ -22,7 +22,7 @@ import SubHeader from "./components/SubHeader.vue";
       </nav>
     </div>
   </header>
-  <RouterView></RouterView>
+  <RouterView />
 </template>
 
 <style scoped>
@@ -31,6 +31,9 @@ header {
   max-height: 100vh;
 }
 
+.subheader {
+  color: var(--dark-blue);
+}
 .logo {
   display: block;
   margin: 2rem auto 2rem;

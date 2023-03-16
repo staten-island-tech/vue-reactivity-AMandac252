@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
+    <h1>{{ msg }}</h1>
     <h3>NIJISANJI Affiliated Unit. Unitized on July 17th, 2018</h3>
   </div>
 </template>
@@ -23,6 +23,7 @@ h1 {
 
 h3 {
   font-size: 1.2rem;
+  color: var(--color-text);
 }
 
 .greetings h1,

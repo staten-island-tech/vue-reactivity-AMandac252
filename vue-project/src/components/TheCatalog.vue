@@ -7,6 +7,10 @@
 </template>
 
 <style>
+h1 {
+  padding: 0.9rem;
+}
+
 @media (min-width: 550px) {
   .cart {
     min-height: 80vh;
