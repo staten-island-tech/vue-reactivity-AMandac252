@@ -1,6 +1,6 @@
 <template>
   <div data-aos="fade-down" class="display-card">
-    <img class="display-img" src="" />
+    <img class="display-img" v-bind:src="image" />
     <h3 class="display-title">{{ title }}</h3>
     <h4 class="display-release">{{ release }}</h4>
   </div>
@@ -11,7 +11,6 @@ export default {
   name: "card",
   props: {
     title: String,
-    type: String,
     release: String,
     image: String,
   },
@@ -31,7 +30,7 @@ export default {
   font-weight: bold;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary);
+  background-color: #abd3d8;
   transition: all 0.2s;
 }
 .display-img {
@@ -48,6 +47,6 @@ export default {
 
 .display-card:hover {
   transform: translateY(-0.5rem);
-  box-shadow: 0 1rem 1rem var(--secondary);
+  box-shadow: 0 1rem 1rem #589db3;
 }
 </style>
