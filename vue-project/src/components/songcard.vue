@@ -11,7 +11,7 @@ export default {
   name: "card",
   props: {
     title: String,
-    release: String,
+    release: Array,
     image: String,
   },
 };

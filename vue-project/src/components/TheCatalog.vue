@@ -5,7 +5,13 @@
     </div>
 
     <div class="display">
-      <songcard image="" title="hellow" release="" />
+      <songcard
+        v-for="songs in songs"
+        :key="songs.title"
+        :title="songs.title"
+        :release="songs.realease"
+        :image="songs.image"
+      />
     </div>
   </div>
 </template>
@@ -18,7 +24,140 @@ export default {
   components: {
     songcard,
   },
-  data() {},
+  data() {
+    return {
+      selected: "",
+      songs: [
+        {
+          title: "【初投稿】終末じゃない　歌ってみた",
+
+          release: ["Aug 23, 2018"],
+
+          image: ".../assets//Songimages/終末じゃない　歌ってみた.jpg",
+        },
+
+        {
+          title: "【MV】ヘテロスタシス ",
+
+          release: ["Feb 11, 2020"],
+
+          image: "../images/Songimages/Heterostatis.jpg",
+        },
+
+        {
+          title: "【『Not For You』叶／葛葉】",
+
+          release: ["Feb 11, 2020"],
+
+          image: "../images/Songimages/Notforyou.png",
+        },
+
+        {
+          title: "【オリジナルMV】Ice breaker",
+
+          release: ["May 24, 2020"],
+
+          image: "../images/Songimages/icebreaker.png",
+        },
+
+        {
+          title: "【オリジナル】常夏★スカイスクレイパー",
+
+          release: ["Sept 13, 2020"],
+
+          image: "../images/Songimages/SKyScrapper.jpg",
+        },
+
+        {
+          title: "【オリジナル】LET IT BURN【ChroNoiR feat.加賀美ハヤト】",
+
+          release: ["Oct 30, 2020"],
+
+          image: "../images/Songimages/LetitBurn.png",
+        },
+
+        {
+          title: "【オリジナル】Geminids",
+
+          release: ["Dec 20, 2020"],
+
+          image: "../images/Songimages/Geminids.jpg",
+        },
+
+        {
+          title: "【オリジナルMV】ChroNoiR HoneyWorks medley",
+
+          release: ["Feb 21, 2021"],
+
+          image: "../images/Songimages/Honeyworks.jpg",
+        },
+
+        {
+          title: "【オリジナルMV】シュガーヘイト",
+
+          release: ["May 28, 2021"],
+
+          image: "../images/Songimages/Sugarhate.jpg",
+        },
+
+        {
+          title: "【オリジナルMV】アウトサイダー",
+
+          release: ["June 27, 2021"],
+
+          image: "../images/Songimages/outsider.jpg",
+        },
+
+        {
+          title: "【オリジナル】マグマグラグラ",
+
+          release: "Nov 6, 2021",
+
+          image: "../images/Songimages/GuraGura.jpg",
+        },
+
+        {
+          title: "【オリジナル】ブラッディ・グルービー",
+
+          release: ["Dec 25, 2021"],
+
+          image: "../images/Songimages/Bloody-Groovy.jpg",
+        },
+
+        {
+          title: "【オリジナルMV】CandyDance",
+
+          release: ["July 10, 2022"],
+
+          image: "../images/Songimages/CandyDance.png",
+        },
+
+        {
+          title: "【オリジナル】スターブラックゲイザー",
+
+          release: ["Aug 22, 2022"],
+
+          image: "../images/Songimages/blackstargazer.jpg",
+        },
+
+        {
+          title: "【オリジナルMV】シネマ ",
+
+          release: ["Dec 11, 2022"],
+
+          image: "../images/Songimages/Cinima.jpg",
+        },
+
+        {
+          title: "【オリジナル】Up2You - Lily ",
+
+          release: ["Dec 11, 2022"],
+
+          image: "../images/Songimages/Up2you.jpg",
+        },
+      ],
+    };
+  },
 };
 </script>
 
