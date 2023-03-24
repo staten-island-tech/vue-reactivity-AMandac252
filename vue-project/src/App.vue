@@ -8,9 +8,9 @@ import SubHeader from "./components/SubHeader.vue";
     <img
       alt="ChroNoir Logo"
       class="logo"
-      src="@/assets/images/ChroNoir.png"
-      width="200"
-      height="200"
+      src="@/assets/images/Logo.jpg"
+      width="400"
+      height="300"
     />
 
     <div class="wrapper">
