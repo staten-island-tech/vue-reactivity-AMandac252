@@ -171,7 +171,7 @@ h1 {
   flex-wrap: wrap;
   width: 100vw;
   flex-direction: column;
-  padding: 0.9rem;
+  padding: 0.5rem;
 }
 
 .display {
@@ -209,7 +209,7 @@ h1 {
 
 @media (min-width: 1024px) {
   .catalog {
-    min-height: 30vh;
+    min-height: 5vh;
     display: flex;
     align-items: top;
     margin: 5rem;
