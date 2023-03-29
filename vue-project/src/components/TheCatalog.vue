@@ -33,7 +33,7 @@ export default {
 
           release: ["Aug 23, 2018"],
 
-          image: ".../assets//Songimages/終末じゃない　歌ってみた.jpg",
+          image: ".../assets/images/Songimages/終末じゃない　歌ってみた.jpg",
         },
 
         {

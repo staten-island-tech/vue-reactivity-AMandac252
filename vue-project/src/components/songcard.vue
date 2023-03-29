@@ -3,6 +3,7 @@
     <img class="display-img" v-bind:src="image" />
     <h3 class="display-title">{{ title }}</h3>
     <h4 class="display-release">{{ release }}</h4>
+    <button class="btn" @click="add">Add to cart</button>
   </div>
 </template>
 
@@ -14,10 +15,17 @@ export default {
     release: Array,
     image: String,
   },
+  name: "btn",
+
+  methods: {
+    add: function () {
+      console.log("hellow");
+    },
+  },
 };
 </script>
 
-<style>
+<style scoped>
 .display-card {
   display: flex;
   flex-direction: column;
@@ -48,5 +56,26 @@ export default {
 .display-card:hover {
   transform: translateY(-0.5rem);
   box-shadow: 0 1rem 1rem #589db3;
+}
+
+.btn {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  padding: 1rem 2rem;
+  display: inline-block;
+  margin: 2rem;
+  font-size: 2rem;
+  border: none;
+  background-color: #589db3;
+  color: #ffffff;
+  border-radius: 3rem;
+  transition: all 0.2s;
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
 }
 </style>
