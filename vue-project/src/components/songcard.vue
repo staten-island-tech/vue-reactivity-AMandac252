@@ -16,10 +16,19 @@ export default {
     image: String,
   },
   name: "btn",
-
+  data: () => {
+    return {
+      cart: [],
+    };
+  },
   methods: {
-    add: function () {
-      console.log("hellow");
+    add(card) {
+      this.cart.push(card);
+      console.log("added");
+    },
+    remove(card) {
+      this.cart.splice(this.cart.indexOf(card));
+      console.log("removed");
     },
   },
 };
