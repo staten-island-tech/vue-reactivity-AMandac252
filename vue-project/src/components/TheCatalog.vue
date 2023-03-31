@@ -33,7 +33,7 @@ export default {
 
           release: ["Aug 23, 2018"],
 
-          image: ".../assets/images/Songimages/終末じゃない　歌ってみた.jpg",
+          image: "src/assets/images/Songimages/終末じゃない　歌ってみた.jpg",
         },
 
         {
@@ -41,7 +41,7 @@ export default {
 
           release: ["Feb 11, 2020"],
 
-          image: "../images/Songimages/Heterostatis.jpg",
+          image: "src/assets/images/Songimages/Heterostatis.jpg",
         },
 
         {
@@ -49,7 +49,7 @@ export default {
 
           release: ["Feb 11, 2020"],
 
-          image: "../images/Songimages/Notforyou.png",
+          image: "src/assets/images/Songimages/Notforyou.png",
         },
 
         {
@@ -57,7 +57,7 @@ export default {
 
           release: ["May 24, 2020"],
 
-          image: "../images/Songimages/icebreaker.png",
+          image: "src/assets/images/Songimages/icebreaker.png",
         },
 
         {
@@ -65,7 +65,7 @@ export default {
 
           release: ["Sept 13, 2020"],
 
-          image: "../images/Songimages/SKyScrapper.jpg",
+          image: "src/assets/images/Songimages/SKyScrapper.jpg",
         },
 
         {
@@ -73,7 +73,7 @@ export default {
 
           release: ["Oct 30, 2020"],
 
-          image: "../images/Songimages/LetitBurn.png",
+          image: "src/assets/images/Songimages/LetitBurn.png",
         },
 
         {
@@ -81,7 +81,7 @@ export default {
 
           release: ["Dec 20, 2020"],
 
-          image: "../images/Songimages/Geminids.jpg",
+          image: "src/assets/images/Songimages/Geminids.jpg",
         },
 
         {
@@ -89,7 +89,7 @@ export default {
 
           release: ["Feb 21, 2021"],
 
-          image: "../images/Songimages/Honeyworks.jpg",
+          image: "src/assets/images/Songimages/Honeyworks.jpg",
         },
 
         {
@@ -97,7 +97,7 @@ export default {
 
           release: ["May 28, 2021"],
 
-          image: "../images/Songimages/Sugarhate.jpg",
+          image: "src/assets/images/Songimages/Sugarhate.jpg",
         },
 
         {
@@ -105,7 +105,7 @@ export default {
 
           release: ["June 27, 2021"],
 
-          image: "../images/Songimages/outsider.jpg",
+          image: "src/assets/images/Songimages/outsider.jpg",
         },
 
         {
@@ -113,7 +113,7 @@ export default {
 
           release: "Nov 6, 2021",
 
-          image: "../images/Songimages/GuraGura.jpg",
+          image: "src/assets/images/Songimages/GuraGura.jpg",
         },
 
         {
@@ -121,7 +121,7 @@ export default {
 
           release: ["Dec 25, 2021"],
 
-          image: "../images/Songimages/Bloody-Groovy.jpg",
+          image: "src/assets/images/Songimages/Bloody-Groovy.jpg",
         },
 
         {
@@ -129,7 +129,7 @@ export default {
 
           release: ["July 10, 2022"],
 
-          image: "../images/Songimages/CandyDance.png",
+          image: "src/assets/images/Songimages/CandyDance.png",
         },
 
         {
@@ -137,7 +137,7 @@ export default {
 
           release: ["Aug 22, 2022"],
 
-          image: "../images/Songimages/blackstargazer.jpg",
+          image: "src/assets/images/Songimages/blackstargazer.jpg",
         },
 
         {
@@ -145,7 +145,7 @@ export default {
 
           release: ["Dec 11, 2022"],
 
-          image: "../images/Songimages/Cinima.jpg",
+          image: "src/assets/images/Songimages/Cinima.jpg",
         },
 
         {
@@ -153,7 +153,7 @@ export default {
 
           release: ["Dec 11, 2022"],
 
-          image: "../images/Songimages/Up2you.jpg",
+          image: "src/assets/images/Songimages/Up2you.jpg",
         },
       ],
     };
