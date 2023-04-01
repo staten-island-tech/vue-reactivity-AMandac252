@@ -5,13 +5,13 @@
 a,
 .blue {
   text-decoration: none;
-  color: var(--dark-blue);
+  color: var(--color-text);
   transition: 0.4s;
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: #bbf7ff82;
+    background-color: #3f808a82;
   }
 }
 

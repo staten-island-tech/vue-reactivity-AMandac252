@@ -8,18 +8,13 @@ import SubHeader from "./components/SubHeader.vue";
     <img
       alt="ChroNoir Logo"
       class="logo"
-      src="@/assets/images/Logo.jpg"
-      width="400"
-      height="300"
+      src="@/assets/images/Lightmode.png"
+      width="500"
+      height="500"
     />
 
     <div class="wrapper">
       <SubHeader class="subheader" msg="ChroNoir Album Catalog" />
-
-      <nav>
-        <RouterLink to="/">Catalog</RouterLink>
-        <RouterLink to="/CartView">Cart</RouterLink>
-      </nav>
     </div>
   </header>
   <RouterView />
@@ -32,26 +27,11 @@ header {
 }
 
 .subheader {
-  color: var(--dark-blue);
+  color: var(--color-text);
 }
 .logo {
   display: block;
   margin: 2rem auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
 }
 
 nav a {
@@ -76,6 +56,11 @@ nav a:first-of-type {
     margin: 0 2rem 0 0;
   }
 
+  @media (prefers-color-scheme: dark) {
+    .logo {
+      src: "@/assets/images/Darkmode.png";
+    }
+  }
   header .wrapper {
     display: flex;
     place-items: flex-start;
