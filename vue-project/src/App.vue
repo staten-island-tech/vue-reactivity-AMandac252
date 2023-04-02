@@ -8,7 +8,7 @@ import SubHeader from "./components/SubHeader.vue";
     <img
       alt="ChroNoir Logo"
       class="logo"
-      src="@/assets/images/Darkmode.png"
+      src="/images/Darkmode.png"
       width="500"
       height="500"
     />
