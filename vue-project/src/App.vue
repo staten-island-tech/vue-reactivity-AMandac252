@@ -8,7 +8,7 @@ import SubHeader from "./components/SubHeader.vue";
     <img
       alt="ChroNoir Logo"
       class="logo"
-      src="@/assets/images/Lightmode.png"
+      src="@/assets/images/Darkmode.png"
       width="500"
       height="500"
     />
@@ -56,11 +56,6 @@ nav a:first-of-type {
     margin: 0 2rem 0 0;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .logo {
-      src: "@/assets/images/Darkmode.png";
-    }
-  }
   header .wrapper {
     display: flex;
     place-items: flex-start;

@@ -5,7 +5,7 @@
 a,
 .blue {
   text-decoration: none;
-  color: var(--color-text);
+  color: #ffffff;
   transition: 0.4s;
 }
 

@@ -5,25 +5,53 @@
       <img
         alt="Shopping Cart"
         class="logo"
-        src="@/assets/images/lightcart.png"
+        src="@/assets/images/Darkcart.png"
         width="80"
         height="80"
       />
 
-      <button class="cart-btn">View Cart</button>
+      <button class="cart-btn" v-on:click="navigateTo('cartview')">
+        View Cart
+      </button>
+
+      <button class="song-btn" v-on:click="navigateTo('songs')">
+        View Songs
+      </button>
     </div>
 
-    <div class="display">
-      <div
-        data-aos="fade-down"
-        class="display-card"
-        v-for="song in songs"
-        :key="song.title"
-      >
-        <img class="display-img" v-bind:src="song.image" />
-        <h3 class="display-title">{{ song.title }}</h3>
-        <h4 class="display-release">{{ song.release }}</h4>
-        <button class="btn" v-on:click="add(song)">Add to cart</button>
+    <!-- CART VIEW -->
+    <div v-if="page === 'cartview'">
+      <div class="display">
+        <div
+          data-aos="fade-down"
+          class="display-card"
+          v-for="song in cart"
+          :key="song.title"
+        >
+          <img class="display-img" v-bind:src="song.image" />
+          <h2 class="display-title">{{ song.title }}</h2>
+          <h3 class="display-release">{{ song.release }}</h3>
+          <button class="btn" v-on:click="remove(song)">
+            Remove from cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE VIEW -->
+    <div v-if="page === 'songs'">
+      <div class="display">
+        <div
+          data-aos="fade-down"
+          class="display-card"
+          v-for="song in songs"
+          :key="song.title"
+        >
+          <img class="display-img" v-bind:src="song.image" />
+          <h2 class="display-title">{{ song.title }}</h2>
+          <h3 class="display-release">{{ song.release }}</h3>
+          <button class="btn" v-on:click="add(song)">Add to cart</button>
+        </div>
       </div>
     </div>
   </div>
@@ -34,8 +62,10 @@ export default {
   name: "home",
   data() {
     return {
+      page: "songs",
       cart: [],
       selected: "",
+
       songs: [
         {
           title: "終末じゃない　",
@@ -170,7 +200,12 @@ export default {
   methods: {
     add(song) {
       this.cart.push(song);
-      console.log(this.cart);
+    },
+    navigateTo(page) {
+      this.page = page;
+    },
+    remove(song) {
+      this.cart.splice(this.cart.indexOf(song), 1);
     },
   },
 };
@@ -205,7 +240,7 @@ h1 {
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  background-color: #123b4b8e;
+  background-color: #f0fbff3d;
   border-radius: 30px;
   padding: 3rem;
 }
@@ -231,10 +266,14 @@ h1 {
   justify-content: space-around;
   border-radius: 30px;
 }
-.display-title {
+.display-title,
+.display-release {
   margin-top: 1rem;
   font-size: var(--h4);
   margin-bottom: 1rem;
+  font-weight: bold;
+  text-shadow: 3px 2px #589db3;
+  text-align: center;
 }
 
 .display-card:hover {
@@ -242,7 +281,8 @@ h1 {
   box-shadow: 0 1rem 1rem #589db3;
 }
 
-.cart-btn {
+.cart-btn,
+.song-btn {
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -254,11 +294,17 @@ h1 {
   transition: all 0.2s;
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
+  color: #ffffff;
 }
 
-.cart-btn:hover {
+.cart-btn:hover,
+.song-btn:hover {
   color: #88b2b8;
   transform: translateY(-0.3rem);
+}
+
+.song-btn {
+  margin-right: 20rem;
 }
 
 .btn {
@@ -296,16 +342,6 @@ h3 {
 .greetings h1,
 .greetings h3 {
   text-align: center;
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    src: "@/assets/images/darkcart.png";
-  }
-
-  .cart-btn {
-    color: #ffffff;
-  }
 }
 
 @media (min-width: 550px) {

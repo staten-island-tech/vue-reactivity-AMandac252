@@ -10,7 +10,8 @@ defineProps({
 <template>
   <div class="greetings">
     <h1>{{ msg }}</h1>
-    <h3>NIJISANJI Affiliated Unit. Unitized on July 17th, 2018</h3>
+    <h3>NIJISANJI Affiliated Unit</h3>
+    <h4>Unitized on July 17th, 2018</h4>
   </div>
 </template>
 
@@ -27,13 +28,15 @@ h3 {
 }
 
 .greetings h1,
-.greetings h3 {
+.greetings h3,
+h4 {
   text-align: center;
 }
 
 @media (min-width: 1024px) {
   .greetings h1,
-  .greetings h3 {
+  .greetings h3,
+  h4 {
     text-align: left;
   }
 }
