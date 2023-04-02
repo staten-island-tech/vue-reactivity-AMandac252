@@ -150,7 +150,7 @@ export default {
         {
           title: "【オリジナル】マグマグラグラ",
 
-          release: "Nov 6, 2021",
+          release: ["Nov 6, 2021"],
 
           image: "/images/Songimages/GuraGura.jpg",
         },
